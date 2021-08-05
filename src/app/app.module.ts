@@ -11,6 +11,7 @@ import { ApplicationPersonalComponent } from './application-personal/application
 import { ApplicationVehicleComponent } from './application-vehicle/application-vehicle.component';
 import { ApplicationFilesComponent } from './application-files/application-files.component';
 import { EmiCalcComponent } from './emi-calc/emi-calc.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EmiCalcComponent } from './emi-calc/emi-calc.component';
     ApplicationPersonalComponent,
     ApplicationVehicleComponent,
     ApplicationFilesComponent,
-    EmiCalcComponent
+    EmiCalcComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
