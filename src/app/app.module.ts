@@ -12,6 +12,9 @@ import { ApplicationVehicleComponent } from './application-vehicle/application-v
 import { ApplicationFilesComponent } from './application-files/application-files.component';
 import { EmiCalcComponent } from './emi-calc/emi-calc.component';
 import { HomeComponent } from './home/home.component';
+import { LoanOffersComponent } from './loan-offers/loan-offers.component';
+import { UserDashComponent } from './user-dash/user-dash.component';
+import { AdminDashComponent } from './admin-dash/admin-dash.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HomeComponent } from './home/home.component';
     ApplicationVehicleComponent,
     ApplicationFilesComponent,
     EmiCalcComponent,
-    HomeComponent
+    HomeComponent,
+    LoanOffersComponent,
+    UserDashComponent,
+    AdminDashComponent
   ],
   imports: [
     BrowserModule,
