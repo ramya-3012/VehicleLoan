@@ -10,6 +10,7 @@ import { EligibilityApplicationComponent } from './eligibility-application/eligi
 import { ApplicationPersonalComponent } from './application-personal/application-personal.component';
 import { ApplicationVehicleComponent } from './application-vehicle/application-vehicle.component';
 import { ApplicationFilesComponent } from './application-files/application-files.component';
+import { EmiCalcComponent } from './emi-calc/emi-calc.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ApplicationFilesComponent } from './application-files/application-files
     EligibilityApplicationComponent,
     ApplicationPersonalComponent,
     ApplicationVehicleComponent,
-    ApplicationFilesComponent
+    ApplicationFilesComponent,
+    EmiCalcComponent
   ],
   imports: [
     BrowserModule,

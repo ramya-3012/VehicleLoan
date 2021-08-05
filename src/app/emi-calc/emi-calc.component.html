@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+        integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>EMI Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-md bg-dark">
+            <a class="navbar-brand" href="#">Vehicle Loan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div>
+            <h3>&nbsp EMI CALCULATOR</h3>
+        </div
+        <div class="container">
+            <div class="jumbotron">
+                <form>
+                    
+                    <!-- CALCULATION -->
+
+                    <div class="form-group">
+                        <label for="inputAmount">Loan Amount</label>
+                        <input type="text" class="form-control" id="inputAmount" placeholder="Enter Loan Amount" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputRate">Rate Of Interest</label>
+                        <input type="number" class="form-control" id="inputRate" placeholder="Enter Rate of Interest" required>
+                    </div>
+					
+					 <div class="form-group">
+                        <label for="inputDuration">Duration</label>
+                        <input type="number" class="form-control" id="inputDuration" placeholder="Enter Duration in Months" required>
+                    </div>
+
+
+                    <button type="calculate" class="btn btn-primary">Calculate</button><br>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
