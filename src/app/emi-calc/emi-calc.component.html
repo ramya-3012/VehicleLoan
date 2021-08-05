@@ -8,7 +8,7 @@
         integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>EMI Calculator</title>
+    <title>Forms</title>
 </head>
 
 <body>
@@ -19,39 +19,100 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="D:\VLS\proj.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">EMI calculator <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Apply Loan <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div>
-            <h3>&nbsp EMI CALCULATOR</h3>
-        </div
+        <div><br>
+            <h3>EMI Calculator</h3>
+        </div><br>
         <div class="container">
             <div class="jumbotron">
                 <form>
-                    
-                    <!-- CALCULATION -->
 
                     <div class="form-group">
-                        <label for="inputAmount">Loan Amount</label>
-                        <input type="text" class="form-control" id="inputAmount" placeholder="Enter Loan Amount" required>
+                        <label for="amount"><b>Amount</b></label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter Amount" onchange="Calculate()">
                     </div>
 
                     <div class="form-group">
-                        <label for="inputRate">Rate Of Interest</label>
-                        <input type="number" class="form-control" id="inputRate" placeholder="Enter Rate of Interest" required>
-                    </div>
-					
-					 <div class="form-group">
-                        <label for="inputDuration">Duration</label>
-                        <input type="number" class="form-control" id="inputDuration" placeholder="Enter Duration in Months" required>
+                        <label for="rate"><b>Rate of Interest</b></label>
+                        <input type="number" class="form-control" id="rate" placeholder="Enter rate" onchange="Calculate()">
                     </div>
 
+                    <div class="form-group">
+                        <label for="months"><b>Months</b></label>
+                        <input type="number" class="form-control" id="months" placeholder="Enter Months" onchange="Calculate()">
+                    </div>
 
-                    <button type="calculate" class="btn btn-primary">Calculate</button><br>
+                    <div class="form-group">
+                    <h4 id="total"></h2>
+                    </div>
+
 
 
                 </form>
             </div>
         </div>
     </div>
+
+<script>
+
+    function Calculate() {
+
+            // Extracting value in the amount 
+            // section in the variable
+            const amount = document.querySelector("#amount").value;
+
+            // Extracting value in the interest
+            // rate section in the variable
+            const rate = document.querySelector("#rate").value;
+
+            // Extracting value in the months 
+            // section in the variable
+            const months = document.querySelector("#months").value;
+
+            // Calculating interest per month
+            const interest = (amount * (rate * 0.01)) / months;
+
+            // Calculating total payment
+            const total = ((amount / months) + interest).toFixed(2);
+
+            document.querySelector("#total")
+                .innerHTML = "EMI : (₹)" + total;
+        }
+
+
+</script>
 
 </body>
 
