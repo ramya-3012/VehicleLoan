@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+        integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-md bg-dark">
+            <a class="navbar-brand" href="#">Vehicle Loan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="D:\VLS\proj.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">EMI calculator <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Apply Loan <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+        <br>  <h3>Eligibility</h3> <br>
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+
+                <h4>Vehicle Details:</h4>
+                <form action="applicantdetails.html">
+
+                    <!-- CAR MAKE -->
+                    
+                    
+                    <div class="form-group">
+                        <label for="inputoem">VEHICLE OEM</label>
+                        <select class="form-control" id="inputoem" required>
+                            <option>Suzuki</option>
+                            <option>Honda</option>
+                            <option>Toyota</option>
+                        </select>
+                    </div>
+
+                    <!-- VEHICLE MODEL -->
+                    
+                    
+                    <div class="form-group">
+                        <label for="inputmodel">VEHICLE MODEL</label>
+                        <input type="text" class="form-control" id="inputmodel" placeholder="Enter Vehicle Model" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputexprice">Ex-Showroom Price</label>
+                        <input type="number" class="form-control" id="inputexprice" placeholder="Enter Ex-Showroom Price" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputprice">On-Road Price</label>
+                        <input type="number" class="form-control" id="inputprice" placeholder="Enter On-Road Price" required>
+                    </div>
+
+                    
+                    <!-- CHECK BUTTON -->
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" style="color:red" required>
+                            I hereby declare everything mentioned above is true.
+                        </label>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Applicant Details Page</button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
