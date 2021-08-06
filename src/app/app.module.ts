@@ -15,6 +15,7 @@ import { LoanOffersComponent } from './loan-offers/loan-offers.component';
 import { UserDashComponent } from './user-dash/user-dash.component';
 import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,8 +36,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
-    
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
