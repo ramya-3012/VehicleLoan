@@ -17,6 +17,7 @@ import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutUsComponent } from './about-us/about-us/about-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,8 @@ import { AboutUsComponent } from './about-us/about-us/about-us.component';
     NgbModule,
     BrowserAnimationsModule
     
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
