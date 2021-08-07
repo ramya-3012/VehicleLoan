@@ -15,6 +15,8 @@ import { LoanOffersComponent } from './loan-offers/loan-offers.component';
 import { UserDashComponent } from './user-dash/user-dash.component';
 import { AdminDashComponent } from './admin-dash/admin-dash.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutUsComponent } from './about-us/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +32,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     LoanOffersComponent,
     UserDashComponent,
-    AdminDashComponent
+    AdminDashComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],
